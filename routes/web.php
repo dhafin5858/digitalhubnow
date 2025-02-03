@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +18,15 @@ use Illuminate\Support\Facades\Route;
 // Authentication Routes (Automatically added by Laravel Breeze)
 require __DIR__ . '/auth.php';
 
-// Landing Page Route
+// Landing Page Route (for non-authenticated users)
 Route::get('/', function () {
     return view('landing');
 })->name('landing-page');
+
+// Dashboard Route (Protected for logged-in users)
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+});
 
 // Payment Success Route
 Route::get('/payment-success', function () {
