@@ -63,7 +63,7 @@
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-white mb-2">WiFi Voucher</h3>
                     <p class="text-gray-300 pb-6">akses internet cepat di sekolah !</p>
-                    <a href="https://app.midtrans.com/payment-links/1738549933819" target="_blank" class="w-full bg-blue-500 text-white rounded-lg hover:bg-blue-900 transition duration-300 block">
+                    <a href="https://app.midtrans.com/payment-links/1738649090771" target="_blank" class="w-full bg-blue-500 text-white rounded-lg hover:bg-blue-900 transition duration-300 block">
               (1 day= 3k )
         </a>
                 </div>
